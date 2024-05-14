@@ -1,0 +1,9 @@
+<div>
+    <label for="term">Search for a word:</label>
+        <Input
+            id="term"
+            @type="text"
+            @value={{this.userTerm}}
+        />
+        <LinkTo @route="definition" @query={{hash term=this.userTerm}}>about</LinkTo>
+</div>
